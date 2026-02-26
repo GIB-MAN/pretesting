@@ -3,6 +3,7 @@
 @use 'base/base';
 @use 'base/reset';
 @use 'components/container';
+@use 'layout/header';
 @use 'layout/about';
 @use 'layout/contact';
 @use 'layout/footer';
