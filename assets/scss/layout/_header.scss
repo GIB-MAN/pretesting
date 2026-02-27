@@ -1,0 +1,78 @@
+@mixin gen-font($font-size, $font-weight, $font-color) {
+    font-family: "Poppins";
+    font-size:$font-size;
+    font-weight: $font-weight;
+    color:$font-color;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+ul,li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+button{
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+.container{
+    margin: 0 auto;
+    max-width: 124rem;
+}
+.header {
+    height: 8.6rem;
+    background-color: #052A44;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+&-logo{
+    a {
+      @include gen-font(2rem, 500, #FFFFFF);
+    }
+    }
+&-nav {
+    li {
+        padding:10px 20px;
+        display: flex;
+        justify-content: space-between;
+        gap: 35px;
+
+        a   {
+            @include gen-font(1.6rem, 400, #FFFFFF);
+            }
+        }
+    }
+&-right {
+    img {
+        margin-right: 5rem;
+    }
+    button:first-child{
+        padding:15px 43px;
+        border-radius: 8px;
+        font-weight: 600;
+        color: #FFF;
+    }
+    button:last-child{
+        padding:15px 43px;
+        background-color: #FFF;
+        border-radius: 8px;
+        font-weight: 600;
+        color: #000;
+    }
+}
+}
