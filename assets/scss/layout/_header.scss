@@ -1,33 +1,5 @@
-@mixin gen-font($font-size, $font-weight, $font-color) {
-    font-family: "Poppins";
-    font-size:$font-size;
-    font-weight: $font-weight;
-    color:$font-color;
-}
-html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 62.5%;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-ul,ol {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-a {
-    text-decoration: none;
-    color:black;
-}
-button{
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    border: none;
-}
+@use "../abstracts/mixins";
+
 .container{
     margin: 0 auto;
     max-width: 124rem;
@@ -42,7 +14,7 @@ button{
     padding: 0 20px;
 &-logo{
     a {
-      @include gen-font(2rem, 500, #FFFFFF);
+      @include mixins.gen-font(2rem, 500, #FFFFFF);
     }
     }
 &-nav {
@@ -53,7 +25,7 @@ button{
         gap: 35px;
 
         a   {
-            @include gen-font(1.6rem, 400, #FFFFFF);
+            @include mixins.gen-font(1.6rem, 400, #FFFFFF);
             }
         }
     }
