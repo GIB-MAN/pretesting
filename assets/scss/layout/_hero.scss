@@ -1,0 +1,120 @@
+@use "../abstracts/mixins";
+
+.hero{
+    display: flex;
+    max-width: 124rem;
+    width: 100%;
+
+    &-wrapper{
+        width: 100%;
+        min-height:53.8rem;
+        max-width: 124rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-title{
+        @include mixins.h1-font(4.8rem, 700, black);
+        span {
+            color:#E8DB84;
+        }
+    }
+    &-left {
+        max-width: 58rem;
+        .students {
+            width: 28rem;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p {
+                @include mixins.gen-font(1.3rem, 500, black);
+                
+            }
+        }
+        .students img:nth-child(2) {
+            position: absolute;
+            left:32px;
+        }
+        .students img:nth-child(3) {
+            position: absolute;
+            left:64px;
+            z-index: 1;;
+        }
+    }
+    &-left p {
+        @include mixins.gen-font(1.8rem, 400, black);
+    }
+    &-btn{
+        width: 37rem;
+        display: flex;
+        align-items: center;
+        gap:24px;
+        margin-bottom: 24px;
+        button{
+            @include mixins.button(1.5rem, 4.3rem, #052A44, #FFF);
+        }
+        .play {
+            width: 16rem;
+            display: flex;
+            align-items: center;
+            gap:12px;
+            span {
+                @include mixins.gen-font(1.6rem, 600, black);
+            }
+        }
+        .play-btn {width:45px;
+            height: 45px;
+            border-radius: 50%;
+            box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
+            background: url('../../assets/images/hero/polygon-arrow.png') no-repeat center center;
+        }
+    }
+    &-right{
+        width: 506px;
+        height: 408px;
+        background-color: #E8DB84;
+        border-radius: 20px;
+        position: relative;
+        img {
+            position: absolute;
+            right:0;
+            bottom: 0;
+        }
+        .our-happy {
+            width: 143px;
+            height: 106px;
+            position: absolute;
+            background-color: #FFF;
+            border-radius: 14px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
+            h2 {
+                @include mixins.h2-font(1.2rem, 700, black);
+            }
+            p{
+                @include mixins.p-font(1rem, 350, #2E2E2E);
+            }
+            img {
+                width: 31px;
+                height: 31px;
+                position: static;
+            }
+        }  
+        .hero-1{
+            top:26px;
+            left:-74px;
+        } 
+        .hero-2{
+            top:144px;
+            left:-74px;
+        } 
+         .hero-3{
+            top:268px;
+            left:-74px;
+        } 
+    }
+}

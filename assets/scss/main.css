@@ -74,4 +74,147 @@ button {
   color: #000;
 }
 
+.hero {
+  display: flex;
+  max-width: 124rem;
+  width: 100%;
+}
+.hero-wrapper {
+  width: 100%;
+  min-height: 53.8rem;
+  max-width: 124rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-title {
+  font-family: "Poppins";
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: black;
+}
+.hero-title span {
+  color: #E8DB84;
+}
+.hero-left {
+  max-width: 58rem;
+}
+.hero-left .students {
+  width: 28rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-left .students p {
+  font-family: "Poppins";
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: black;
+}
+.hero-left .students img:nth-child(2) {
+  position: absolute;
+  left: 32px;
+}
+.hero-left .students img:nth-child(3) {
+  position: absolute;
+  left: 64px;
+  z-index: 1;
+}
+.hero-left p {
+  font-family: "Poppins";
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: black;
+}
+.hero-btn {
+  width: 37rem;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+.hero-btn button {
+  padding: 1.5rem 4.3rem;
+  background-color: #052A44;
+  color: #FFF;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.hero-btn .play {
+  width: 16rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.hero-btn .play span {
+  font-family: "Poppins";
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: black;
+}
+.hero-btn .play-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
+  background: url("../../assets/images/hero/polygon-arrow.png") no-repeat center center;
+}
+.hero-right {
+  width: 506px;
+  height: 408px;
+  background-color: #E8DB84;
+  border-radius: 20px;
+  position: relative;
+}
+.hero-right img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.hero-right .our-happy {
+  width: 143px;
+  height: 106px;
+  position: absolute;
+  background-color: #FFF;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
+}
+.hero-right .our-happy h2 {
+  font-family: "Poppins";
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: black;
+  margin: 5px;
+}
+.hero-right .our-happy p {
+  font-family: "averin";
+  font-size: 1rem;
+  font-weight: 350;
+  color: #2E2E2E;
+  margin: 4.5px;
+}
+.hero-right .our-happy img {
+  width: 31px;
+  height: 31px;
+  position: static;
+}
+.hero-right .hero-1 {
+  top: 26px;
+  left: -74px;
+}
+.hero-right .hero-2 {
+  top: 144px;
+  left: -74px;
+}
+.hero-right .hero-3 {
+  top: 268px;
+  left: -74px;
+}
+
 /*# sourceMappingURL=main.css.map */
