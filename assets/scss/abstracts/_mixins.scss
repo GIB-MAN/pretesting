@@ -1,0 +1,6 @@
+@mixin gen-font($font-size, $font-weight, $font-color) {
+    font-family: "Poppins";
+    font-size:$font-size;
+    font-weight: $font-weight;
+    color:$font-color;
+}
