@@ -4,3 +4,32 @@
     font-weight: $font-weight;
     color:$font-color;
 }
+@mixin h1-font($h1-size, $h1-weight, $h1-color) {
+    font-family: "Poppins";
+    font-size:$h1-size;
+    font-weight: $h1-weight;
+    color:$h1-color;
+}
+@mixin h2-font($h2-size, $h2-weight, $h2-color) {
+    font-family: "Poppins";
+    font-size:$h2-size;
+    font-weight: $h2-weight;
+    color:$h2-color;
+    margin: 5px;
+}
+@mixin p-font($hp-size, $p-weight, $p-color) {
+    font-family: "averin";
+    font-size:$hp-size;
+    font-weight: $p-weight;
+    color:$p-color;
+    margin: 4.5px;
+}
+@mixin button($paddingY,$paddingX,$btn-bg,$btn-color)
+{
+    padding: $paddingY $paddingX;
+    background-color: $btn-bg;
+    color: $btn-color;
+    border-radius:8px;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
